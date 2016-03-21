@@ -4,11 +4,10 @@
 
 $(document).on "page:change", ->
     $("#send_url").click(=>
-        console.log("ASdf")
 
         host = $('#host_input').val()
         url = encodeURIComponent($('#url_input').val())
-        fullpath = host + ":3000/send_url?url=" + url
+        fullpath = "/send_url?host=" + host + "&url=" + url
         console.log(fullpath)
         
         $.ajax(url: fullpath).done( (resultJson) =>
