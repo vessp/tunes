@@ -1,7 +1,14 @@
 <h1>Tunes#index</h1>
 <p>Find me in app/views/tunes/index.html.erb</p>
 
-<div class="well">
-    <input id="url_input" placeholder="enter url"/>
-    <button id="send_url">Send</button>
+<div class="well row">
+    <div class="col-md-12">
+        <label>Host:</label>
+        <input id="host_input" placeholder="enter hostname" value="127.0.0.1" style="width:100%"/>
+        <label>URL:</label>
+        <input id="url_input" placeholder="enter url"
+            value="https://www.youtube.com/watch?v=2O9K7E3lDRU&index=62&list=PL2D97DF33187EBC0F"
+            style="width:100%"/>
+        <button id="send_url">Send</button>
+    </div>
 </div>
