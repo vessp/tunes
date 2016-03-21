@@ -7,7 +7,7 @@ class TunesController < ApplicationController
     url = params[:url]
     Tracer.d("url=" + url.to_s)
 
-    exec("chrome.exe")
+    exec("chrome.exe " + url)
 
     render json: {success:true}
   end
