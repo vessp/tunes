@@ -1,0 +1,11 @@
+create new project and copy in the files it automatically creates
+install node.js
+add chrome.exe path to environment variables
+
+
+to start server:
+run git bash
+cd C:/Users/shard/Documents/GitHub/tunes
+rails s
+
+http://127.0.0.1:3000/
